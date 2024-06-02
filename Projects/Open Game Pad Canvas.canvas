@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"cbc09a3ab9b1ecf1","type":"text","text":"# **PC**","x":-326,"y":-400,"width":137,"height":94,"color":"#ff0000"},
+		{"id":"d6c3f6766c1ec055","type":"text","text":"### USB 2.0 Connector","x":-285,"y":-200,"width":185,"height":80,"color":"#ff961f"},
+		{"id":"31a703d809dce5fb","type":"text","text":"#  ATTINY85","x":-281,"y":40,"width":177,"height":110,"color":"#1100ff"},
+		{"id":"dd364e3036c0e2c3","type":"text","text":"#### Button MUX Matrix","x":70,"y":53,"width":180,"height":84},
+		{"id":"d079c3f1c63247c8","type":"text","text":"#### Left Trigger/Bumper","x":-40,"y":-234,"width":140,"height":93,"color":"#00ff11"},
+		{"id":"0f96d206119f93bb","type":"text","text":"#### Face Buttons Set","x":-40,"y":-108,"width":140,"height":93,"color":"#00ff11"},
+		{"id":"73e0552bc9d6f66c","type":"text","text":"#### Right Trigger/Bumper","x":220,"y":-234,"width":140,"height":93,"color":"#00ff11"},
+		{"id":"40a31427aa9e1d41","type":"text","text":"#### D-Pad Buttons Set","x":220,"y":-108,"width":140,"height":93,"color":"#00ff11"},
+		{"id":"b20cd9f9a539b5bb","type":"text","text":"#### Joystick Set","x":-281,"y":240,"width":177,"height":60,"color":"#945151"},
+		{"id":"9f08f8a6ad2e15cd","type":"text","text":"#### Menu Button","x":220,"y":274,"width":140,"height":93,"color":"#00ff11"},
+		{"id":"6faad47ebcf3bc4c","type":"text","text":"#### Select Back/Forward","x":-40,"y":274,"width":140,"height":93,"color":"#00ff11"}
+	],
+	"edges":[
+		{"id":"6c415a296ea9bbb7","fromNode":"d6c3f6766c1ec055","fromSide":"top","toNode":"cbc09a3ab9b1ecf1","toSide":"bottom","fromEnd":"arrow","color":"#ffffff","label":"I/O"},
+		{"id":"49b757f3c6d4455e","fromNode":"31a703d809dce5fb","fromSide":"top","toNode":"d6c3f6766c1ec055","toSide":"bottom","fromEnd":"arrow","color":"#ffffff","label":"Data"},
+		{"id":"79e35624251b7877","fromNode":"d6c3f6766c1ec055","fromSide":"left","toNode":"31a703d809dce5fb","toSide":"top","color":"#ff0000","label":"Power"},
+		{"id":"191cc3130c413999","fromNode":"b20cd9f9a539b5bb","fromSide":"left","toNode":"31a703d809dce5fb","toSide":"left","color":"#ff00d0","label":"Analog\ndata"},
+		{"id":"d64532d558a5794a","fromNode":"dd364e3036c0e2c3","fromSide":"left","toNode":"31a703d809dce5fb","toSide":"right","fromEnd":"arrow","color":"#ffffff","label":"Digital\nData"},
+		{"id":"79fc654eab657ca2","fromNode":"0f96d206119f93bb","fromSide":"bottom","toNode":"dd364e3036c0e2c3","toSide":"top","color":"#ffffff"},
+		{"id":"ce6fc486b42f3b87","fromNode":"40a31427aa9e1d41","fromSide":"bottom","toNode":"dd364e3036c0e2c3","toSide":"top","color":"#ffffff"},
+		{"id":"2178fa97f5bce11e","fromNode":"d079c3f1c63247c8","fromSide":"right","toNode":"dd364e3036c0e2c3","toSide":"top","color":"#ffffff","label":"'Rapid'\nButtons\nDigital"},
+		{"id":"fecb6f02110ff965","fromNode":"6faad47ebcf3bc4c","fromSide":"right","toNode":"dd364e3036c0e2c3","toSide":"bottom","color":"#ffffff"},
+		{"id":"6bafae62d122a19b","fromNode":"b20cd9f9a539b5bb","fromSide":"top","toNode":"dd364e3036c0e2c3","toSide":"bottom","color":"#e4d7d7","label":"Joystick\nButtons"},
+		{"id":"50889a9dee554560","fromNode":"9f08f8a6ad2e15cd","fromSide":"left","toNode":"dd364e3036c0e2c3","toSide":"bottom","color":"#ffffff","label":"'Rare'\nButtons\nDigital"},
+		{"id":"e33d3e75f3703b5b","fromNode":"73e0552bc9d6f66c","fromSide":"left","toNode":"dd364e3036c0e2c3","toSide":"top","color":"#ffffff"}
+	]
+}
