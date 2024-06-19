@@ -3,7 +3,7 @@
 		{"id":"cbc09a3ab9b1ecf1","type":"text","text":"# **PC**","x":-326,"y":-400,"width":137,"height":94,"color":"#ff0000"},
 		{"id":"d6c3f6766c1ec055","type":"text","text":"### USB 2.0 Connector","x":-285,"y":-200,"width":185,"height":80,"color":"#ff961f"},
 		{"id":"31a703d809dce5fb","type":"text","text":"#  ATTINY85","x":-281,"y":40,"width":177,"height":110,"color":"#1100ff"},
-		{"id":"dd364e3036c0e2c3","type":"text","text":"#### Button MUX Matrix","x":70,"y":53,"width":180,"height":84},
+		{"id":"dd364e3036c0e2c3","type":"text","text":"#### Button Matrix","x":70,"y":53,"width":180,"height":84},
 		{"id":"d079c3f1c63247c8","type":"text","text":"#### Left Trigger/Bumper","x":-40,"y":-234,"width":140,"height":93,"color":"#00ff11"},
 		{"id":"0f96d206119f93bb","type":"text","text":"#### Face Buttons Set","x":-40,"y":-108,"width":140,"height":93,"color":"#00ff11"},
 		{"id":"73e0552bc9d6f66c","type":"text","text":"#### Right Trigger/Bumper","x":220,"y":-234,"width":140,"height":93,"color":"#00ff11"},

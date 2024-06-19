@@ -12,3 +12,6 @@ Here lies all important links to datasheets, reference manuals and documents of 
 - [[ATtiny85]]
 # Miscs:
 - [[sensors]]
+- [[plexers]]
+- [[registers]]
+- [[counters]]

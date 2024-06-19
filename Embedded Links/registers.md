@@ -1,0 +1,2 @@
+Here are links to different datasheets of different registers.
+- [SNX4HC165 8-bit PISO](https://www.ti.com/lit/ds/symlink/sn74hc165.pdf?ts=1717591560556&ref_url=https%253A%252F%252Fwww.google.com%252F)
