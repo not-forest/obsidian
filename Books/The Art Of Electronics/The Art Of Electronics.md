@@ -19,4 +19,4 @@
 15. [[Micro-controllers]]
 
 ## Opinion on book:
-not read yet.
+not read fully yet.

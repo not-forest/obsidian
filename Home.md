@@ -31,3 +31,4 @@ All useful HW documentation:
 Books And Notes
 
 - [[The Art Of Electronics]]
+- [[Digital Design]]
