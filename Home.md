@@ -14,6 +14,8 @@ Quick random important links:
 - [GCC Inline ASM](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html)
 - [Linker Full](https://github.com/wntrblm/Castor_and_Pollux/blob/main/firmware/scripts/samd21g18a.ld)
 - [AVR fuse calculator](https://www.engbedded.com/fusecalc/)
+- [PINOUT](https://pinout.xyz/)
+- [MathJax Editor LaTeX](https://editor.codecogs.com/)
 
 All useful HW documentation:
 
@@ -25,3 +27,7 @@ All useful HW documentation:
 - [Yocto Docs](https://docs.yoctoproject.org/brief-yoctoprojectqs/index.html)
 - [Yocto Source Repo](https://git.yoctoproject.org/)
 - [Yocto Releases](https://wiki.yoctoproject.org/wiki/Releases)
+
+Books And Notes
+
+- [[The Art Of Electronics]]
