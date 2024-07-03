@@ -1,4 +1,4 @@
-### 1.1 Introduction
+## 1.1 Introduction
 
 > *Integrated Circuit (IC)* - A set of electrical components integrated into one piece.
 
