@@ -91,7 +91,9 @@ $$
  $$
  \overline{x}^TQ\overline{x}=0
 $$
+---
 ## 2.1.1 2D Transformations
+
 ![[Pasted image 20240704192309.png]]
 
 > Translation - a simple 2D translations can be written as:
@@ -273,6 +275,8 @@ x' = R(x - c) = Rx - Rc
 $$
   where c is the center of rotation (often camera center).
 
+---
+
 #### Proper 3D Rotation
 
 Compactly parameterizing a 3D rotation is a non-trivial task, which we describe in more detail below.
@@ -324,4 +328,51 @@ Rotations through common angles such as multiples of 90$^o$ can be represented e
 #### Where to use
 > Excellent choice for small rotations (e.g corrections to rotations)
 ![[Pasted image 20240705001959.png]]
+
+> Unit Quaternions - the unit quaternion representation is closely related to the angle/axis representation. It is a unit, length 4-vector whose components can be written as $q = (q_x, q_y, q_z, q_w)$. Those components live on a unit square $||q|| = 1$ and *antipodal* (opposite sign) quatenions, q and -q representation of a rotation is unique.
+  Popular for pose representation and pose interpolation in computer graphics.
+
 ![[Pasted image 20240705003026.png]]
+
+This representation is continuous, i.e, as rotation matrices vary continuously, you can find a continuous quaternion representation.
+
+Quaternions can be derived from the axis/angle representation through the formula:
+$$
+q = (v,w) = (sin\frac{\theta}{2}\hat{n},cos\frac{\theta}{2}),
+$$
+![[Pasted image 20240710183623.png]]
+
+> Given two queternions $q_0 = (v_0, w_0)$ and $q_1 = (v_1, w_1)$, the quartenion multiply operator is defined as:
+$$
+q_2 = q_0q_1 = (v_0 \times x_1 + w_0v_1 + w_1v_0, w_0w_1-v_0 \cdot v_1)
+$$
+ therefore arrives the property:
+$$
+ R(q_2) = R(q_0)R(q_1)
+$$
+> NOTE! Quartenion multiplication, as well as 3D rotation and matrix multiplication are not commutative.
+
+> The Inverse of Quaterion can be obtained by flipping the sign of either $v$ or $w$ but not both.
+
+---
+
+#### #ALGORITHM 2.1
+
+![[Pasted image 20240710185706.png]]
+
+> Spherical Linear interpolation (slerp) - procedure of determinatin a rotation that is partway between two given rotations. We can compute the incremental rotation, take a fraction of the angle, and compute the new rotation.
+
+Here is how the *slerp* algorithm is defined in entropy language source code as a part of *Core* library.
+
+```entropy
+include core::primitives::Quartenion
+
+fn Quartenion !< slerp q0: Quartenion, q1: Quartenion, a = {
+	let qr = fn q -> q.wr < 0 ? -q:  q << (q1 / q0);
+	let θr = 2 * arctg << ||qr.vr|| / qr.wr;
+	let nr = qr.vr / ||qr.vr||;
+	!< q0 * (Quartenion::from << 
+		(sin << (a * θr * nr)/2, cos << (a * θr)/2));
+}
+```
+
