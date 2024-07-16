@@ -356,7 +356,7 @@ $$
 
 ---
 
-#### #ALGORITHM 2.1
+#### #ALGORITHM №1
 
 ![[Pasted image 20240710185706.png]]
 
@@ -368,11 +368,169 @@ Here is how the *slerp* algorithm is defined in entropy language source code as 
 include core::primitives::Quartenion
 
 fn Quartenion !< slerp q0: Quartenion, q1: Quartenion, a = {
-	let qr = fn q -> q.wr < 0 ? -q:  q << (q1 / q0);
+	let qr = fn q -> q.wr < 0 ? -q: q << (q1 / q0);
 	let θr = 2 * arctg << ||qr.vr|| / qr.wr;
 	let nr = qr.vr / ||qr.vr||;
-	!< q0 * (Quartenion::from << 
-		(sin << (a * θr * nr)/2, cos << (a * θr)/2));
+	!< q0 * (Quartenion::into << 
+		{ sin << (a * θr * nr)/2; cos << (a * θr)/2) };
 }
 ```
 
+#### Which rotations representation is better?
+
+- Axis/angle - the axis/angle representation is minimal,and hence does not require any additional constraints on the parameters (no need to re-normalize after each update). If angle is in degrees, it is easier to understand the pose, and also easier to express exact rotations. When the angle is in radians, the derivatives of R with reprect to w easily be computed.
+- Quanternions - better if you want to keep track of a smoothly moving camera, since there is no discontinuities in the representation. Easier to interpolate between rotations and to chain rigid transformations.
+
+## 3D to 2D projetions
+
+#### Orthography and para-perspective
+
+> Ortography - An orthographic projection simply drops the z component of the three-dimensional coordinate p to obtain the 2D point x:
+$$
+x = [I_{2x2}|0]p
+$$
+
+If we are using homogeneous coordinates, we can write:
+$$
+\tilde{x}=\begin{bmatrix}
+	1 & 0 & 0 & 0 \\
+	0 & 1 & 0 & 0 \\
+	0 & 0 & 0 & 1
+\end{bmatrix} \tilde{p}
+$$
+Orthography is an approximate model for long focal lenth (telephoto) lenses and objects, whose depth is shallow relative to their distance to the camera.
+![[Pasted image 20240714175458.png]]
+
+> Scaled Orthography - In practice, world coordinates need to be scaled to fit onto image sensor. For this reason, scaled orthography is actually more commonly used:
+$$
+x = [sI_{2x2}|0]p
+$$
+
+The scaling can be the same for all parts of the scene or it can be different for objects that are being modeled independently. Scaling can vary from frame to frame to estimate structure from motion.
+
+> Para-perspective - in this model, object points are again first projected onto a local reference parallel to the image plane. However, rather than being projected onto a local reference parallel to the line of sight to the object center. This is followed by the usual projection onto the final image plane, which again amounts to a scaling. The combination of these two projections is therefore affine and can be written as:
+$$
+\tilde{x}=\begin{bmatrix}
+	a_{00} & a_{01} & a_{02} & a_{03} \\
+	a_{10} & a_{11} & a_{12} & a_{13} \\
+	0 & 0 & 0 & 1
+\end{bmatrix} \tilde{p}
+$$
+
+Para-perspective provides a more accurate projection model than scaled orthography, without incurring the added complexity of per-pixel perspective division, which invalidates traditional factorization methods.
+
+> Perspective - most commonly used projection in computer graphics and computer vision is true 3D perspective. Here, points are projected onto the image plane by dividing them by their z component:
+$$
+\tilde{x} = P_z(p)=
+\begin{bmatrix}
+	x/z \\
+	y/z \\
+	1
+\end{bmatrix}
+$$
+  In homogeneous coordinates, the projection has a simple linear form:
+$$
+\tilde{x}=\begin{bmatrix}
+	1 & 0 & 0 & 0 \\
+	0 & 1 & 0 & 0 \\
+	0 & 0 & 1 & 0
+\end{bmatrix} \tilde{p}
+$$
+
+After projection it is not possible to recover the distance of the 3D point from the image, which makes sense for a 2D imaging sensor.
+
+> Two-step Projection - common in computer graphics systems, which is a two-step projection that first projects 3D coordinates into *normalized device coordinates* (x, y, z) E [-1,1]x[-1,1]x[0,1], and then rescales these coordinates to integer pixel coordinates using a viewport tranformation. The initial prespective projection is then represented using a 4x4 matrix:
+$$
+\tilde{x}=\begin{bmatrix}
+	1 & 0 & 0 & 0 \\
+	0 & 1 & -z_{far}/z_{range} & z_{near}z_{far}/z_{range} \\
+	0 & 0 & 1 & 0
+\end{bmatrix} \tilde{p}
+$$
+#### Camera Intrinsics
+![[Pasted image 20240714181356.png]]
+
+Once we have projected a 3D point through an ideal pinhole using a projection matrix, we must still transform the resulting coordinates according to the pixel sensor spacing and the relative position of the sensor plane to the origin.
+
+> Image Sensors - image sensors return pixel value by integer *pixel coordinates $(x_s,y_s)$*, often with the coordinates starting at the upper-left corner of the image and moving down to the right.
+
+To map pixel centers to 3D coordinates, we first scale the $(x_s,y_s)$ values by the pixel spacings $(s_x, s_y)$ [sometimes expressed in microns for solid-state sensors] and then describe the orientation of the sensor array relative to the camera projection center $O_c$ with an origin $c$ and a 3D rotation $R_s$:
+$$
+p = [R_s\space c_S]
+\begin{bmatrix}
+	s_x & 0 & 0 \\
+	0 & s_y & 0 \\
+	0 & 0 & 0 \\
+	0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+	x_s \\ y_s \\ 1
+\end{bmatrix} = M_s\tilde{x}_s
+$$
+The relation between the 3D pixel center $p$ and the 3D camera-centered point $p_c$ is given by an unknown scaling $s$. $p = sp_c$. We can therefore write the complete projection between $p_c$ and a homogeneous version of the pixel address $\tilde{x}_s$, as: 
+$$
+\tilde{x}_s = \alpha M_s^{-1}p_c = Kp_c
+$$
+> Calibration Matrix (K) - describes the camera *intrinsics* ( as opposed to the camera's orientation in space, which are called the *extrinsics*).
+
+ When calibrating a camera based on external 3D points or other measurements, we end up estimating the intrinsic (K) and extrinsic (R, t) camera parameters simultaneously using a series of measurements,
+$$
+ \tilde{x}_s = K*[R\space t]p_w = Pp_w
+$$
+where $p_w$ are known 3D world coordinates and P is known as a *camera matrix.*![[Pasted image 20240716193804.png]]
+
+> There are several ways to write the upper-triangular form of K. One possibility is:
+$$
+K = \begin{bmatrix}
+	f_x & s & c_x \\
+	0 & f_y & c_y \\
+	0 & 0 & 1	
+\end{bmatrix}
+$$
+  which uses independent focal lengths $f_x, f_y$ for the sensor x and y dimensions. The entry s encodes any possible *skew* between the sensor axes due to the sensor not being mounted perpendicular to the optical axis and $c_x, c_y$ denotes the *image center/principal point* expressed in pixel coordinates.
+  Another possibility is:
+$$
+  K = \begin{bmatrix}
+	f & s & c_x \\
+	0 & \alpha f & c_y \\
+	0 & 0 & 1	
+\end{bmatrix}
+$$
+  where $\alpha$ is the *aspect ratio* has been made explicit and a common focal length $f$ is used. In practice, for many applications an even simpler form can be obtained by setting $\alpha = 1$ and $s = 0$:
+$$
+  K = \begin{bmatrix}
+	f & 0 & c_x \\
+	0 & f & c_y \\
+	0 & 0 & 1	
+  \end{bmatrix}
+$$
+  often, setting the origin at roughly the center of the image, e.g ($c_x,c_y$) = (W/2,H/2), can result in a perfectly usable camera model with a single unknown $f$.
+![[Pasted image 20240716194536.png]]
+
+#### A Note of Focal Length
+
+Focal length sometimes causes troubles when implementing computer vision algorithms, because they are dependent on the unit used to measure pixels.
+
+> Overall formulas below illustrate the relationship between the focal length $f$, the sensor width W and the horizontal field of view $\theta_H$:
+$$
+tg\frac{\theta_H}{2}=\frac{W}{2f},\space or \space f = \frac{W}{2}arctg\frac{\theta_H}{2}
+$$
+
+For example the stock lens that often comes with SLR cameras is 50mm, therefore the focal length would also be interpreted in mm. Since we work with digital images, it is more convenient to express W in pixels, so that the focal length $f$ can be used directly in the calibration matrix K.
+
+> Independent Focal Lengths - can be obtained by scaling the pixel coordinates that go from [-1, 1) along the longer image dimension and 
+> 				  $-\alpha^{-1},\alpha^{-1}$
+> along shorter axis, where $a >= 1$ is the image aspect ratio (as opposed to the sensor cell aspect ratio above). This can be obtained using *normalized device coordinates*
+$$
+x'_s = (2x_s - W) / S\space and\space y'_s = (2y_s - W) / S\space where\space S = max(W,H)
+$$
+  This is useful in multi-resolution, image-processing algorithms, such as image pyramids.
+
+#### Camera Matrix
+
+Above there is an information about how to parametrize the calibration matrix K, we can put the camera *intrinsics* and *extrinsics* together to obtain a single 3x4 *camera matrix*
+$$
+P = K[R\space t]
+$$
+
+![[Pasted image 20240716201548.png]]
