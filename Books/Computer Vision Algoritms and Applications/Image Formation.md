@@ -398,6 +398,8 @@ $$
 	0 & 0 & 0 & 1
 \end{bmatrix} \tilde{p}
 $$
+Here we drop the $z$ component but keep the $w$ component.
+
 Orthography is an approximate model for long focal lenth (telephoto) lenses and objects, whose depth is shallow relative to their distance to the camera.
 ![[Pasted image 20240714175458.png]]
 
@@ -528,9 +530,62 @@ $$
 
 #### Camera Matrix
 
-Above there is an information about how to parametrize the calibration matrix K, we can put the camera *intrinsics* and *extrinsics* together to obtain a single 3x4 *camera matrix*
+Now that we have shown how to parametrize the calibration matrix K, we can put the camera *intrinsics* and *extrinsics* together to obtain a single 3x4 *camera matrix*
 $$
 P = K[R\space t]
 $$
 
 ![[Pasted image 20240716201548.png]]
+
+Sometimes it is preferable to use an invertible 4x4 matrix, which can be obtained by not dropping the last row in the P matrix:
+$$
+\tilde{P}=\begin{bmatrix}
+	K & 0 \\
+	0^T & 1 \\
+\end{bmatrix}\begin{bmatrix}
+	R & t \\
+	0^T & 1 \\
+\end{bmatrix} = \tilde{K}E
+$$
+where $E$ is a 3D rigid-body (Euclidean) transformation and $\tilde{K}$ is the full-rank calibration matrix. The 4x4 camera matrix \tilde{P} can be used to map directly from 3D world coordinates $\tilde{p}_w = (x_w, y_w, z_w, 1)$ to screen coordinate (plus disparity), $x_s = (x_s, y_s, 1, d)$:
+$$
+x_s \sim \tilde{P}\overline{p}_w
+$$
+Note that after multiplication by $\tilde{P}$, the vector is divided by the *third* element of the vector to obtain the normalized for $x_s = (x_s, y_s, 1, d)$
+
+### Plane plus parallax (projective depth)
+
+> Parallax - projective depth of a 3D scene point $p_w$ from the reference plate $\hat{n}_0 * p_w + c_0 = 0$:
+$$
+d = \frac{s_3}{z}(\hat{n}_0 * p_w + c_0)
+$$
+Setting $n_0 = 0$ and $c0 = 1$, i.e putting the reference plane at infinity, results in the more standard $d = 1/z$ version of disparity.
+
+Another way of see this is to invert the $\tilde{P}$ matrix so that we can map pizels plus disparity directly back to 3D points:
+$$
+\tilde{p}_w = \tilde{P}^{-1}x_s
+$$
+### Mapping from one camera to another
+
+Using the full rank 4x4 camera matrix $\tilde{P} = \tilde{K}E$ from we can write the projection from world to screen coordinates as:
+$$
+\tilde{x}_0 \sim \tilde{K}_0E_0p=\tilde{P}_0p
+$$
+Assuming we know the z-buffer or disparity value $d_0$ for a pixel in one image, we can compute the 3D point location p using:
+$$
+p \sim E^{-1}_0\tilde{K}^{-1}_0\tilde{x}^{-1}_0
+$$
+and then project it into another image yielding
+$$
+\tilde{x}_1\sim\tilde{K}_1\tilde{E}_1p=\tilde{K}_1E_1E^{-1}_0\tilde{x}_0=\tilde{P}_1\tilde{P}^{-1}_0\tilde{x}_0=M_{10}x_0
+$$
+For a planar scene, by using a general plane equation, $\hat{n}_0 * p + c_0$, that maps point on the plane to $d_0 = 0$ values, the last column and the last row of $M_{10}$ matrix can be ignored and written as $H_{10}$, since we do not cate about the final z-buffer depth. The equation reduces to:
+$$
+\tilde{x}_1\sim\tilde{H}_{10}\tilde{x}_0
+$$
+![[Pasted image 20240731212903.png]]
+
+Another case where we do not need to know the depth to perform inter-camera mapping is when the camera is undergoing pure rotation, i.e, when $t_0 = t_1$:
+$$
+\tilde{x1}\sim K_1R_1R^{-1}_0K^{-1}_0\tilde{x}_0=K_1R_{10}K^{-1}_0\hat{x}_0
+$$
