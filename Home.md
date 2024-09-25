@@ -32,3 +32,8 @@ Books And Notes
 
 - [[The Art Of Electronics]]
 - [[Digital Design]]
+- [[Computer Vision Algoritms and Applications]]
+
+## Norge
+- [Audio Files](https://dopobrania.prestonpublishing.pl/biblioteka/norweski-365-na-kazdy-dzien) - Norweski 365
+- [[Uker]]
