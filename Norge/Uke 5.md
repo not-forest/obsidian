@@ -104,5 +104,95 @@ d) I do not like this menu:
 e) She eats lunch at work:
 	Hun spiser lunsj på jobben.
 
+## Verb i fokus
 
+| skal | willing to do something now    | Hun skal gå på skolen. - she will go to school.                                                Skal han spise middag? - will he eat the dinner?                                      |
+| ---- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| vil  | wanting to do something now    | Johanne vil gå på kino - Johanne would like to go to the movie theater.                                                                                                              |
+| kan  | being able to do something now | Markus kan snakke kinesisk - Markus can speak Chinese.                                    Katrine kan ikke svømme - Katrine cannot swim.   Kan du komme i dag? - Can you come today? |
+| må   | being have to do something now | Jeg må betale regningene - I have to pay the bill.                                                                                                                                   |
+| bør  | must do something now          | Hun bør lese til eksamen - she has to learn for exam.                                                                                                                                |
+må ikke - you are not allowed to.
+trenger ikke - you do not need to.
 
+1. Øv deg:
+a) Hun skal studere norsk snart - He will learn Norwegian soon.
+b) Vil du gå på kino med meg? - Will you go to the movie theater with me?
+c) Hun kan ikke snakker polsk - He cannot speak Polish.
+d) Barnet vil ha brus - Children would like to have soda.
+e) Hun trenger penger. Hun må gå på jobb.
+
+2. Oversett:
+a) I need to eat the breakfast and drink the coffee:
+	Jeg må spiser frokost og drikker kaffe.
+b) Jens likes to drive the car. He must become a taxi driver.
+	Jens liker å kjøre bil. Han bør bli en taxisjåføren.
+c) I cannot send this mail:
+	Jeg kan ikke sender denne e-posten.
+d) I want to eat that dessert:
+	Jeg vil spiser den desserten.
+
+## Kultur og språk
+
+> [!question]- Vet du at norske barn kan spise godteri bare på lørdag? Og vet du at i Norge kan man bare kjøpe øl i buttiker? Hvis du vil kjøpe vin eller sjampanje, må du gå til Vinmonopolet som er kontrollert av staten. En annen interessant ting er at nordmenn er veldig glad i frossen pizza som heter Drandiosa. Du kan kjøpe forskjellige varianter, for eksempel pizza med kjøttboller eller med kebab-kjøtt. Og en ting til - nordmenn drikker mye kaffe! Det er en veldig populær drikke, og nordmenn drikker gjerne tre eller fire kopper kaffe hver dag.
+> Do you know that Norwegian children can only eat sweets on Saturday?
+  And do you know that in Norway you can only buy beer in shops?
+  If you want to buy wine or champagne, you have to go to Vinmonopolet, which is controlled by the state.
+  Another interesting thing is that Norwegians are very fond of frozen pizza called Drandiosa. You can buy different varieties, for example pizza with meatballs or with kebab meat.
+  And one more thing - Norwegians drink a lot of coffee! It is a very popular drink, and Norwegians like to drink three or four cups of coffee every day.
+
+| et godteri   | sweets                    |
+| ------------ | ------------------------- |
+| en lørdag    | saturday                  |
+| på lørdag    | at the saturday           |
+| Vinmonopolet | The name of alcohol shops |
+| en stat      | country                   |
+| frossen      | frozen                    |
+| forskjellige | different                 |
+| kjøttboller  | meatballs                 |
+| kjøtt        | meat                      |
+| mye          | a lot                     |
+| en kopp      | cup                       |
+| hver dag     | every day                 |
+| en vane      | habit                     |
+
+1. Oversett:
+a) Children should not eating sweets every day:
+	Barn trenger ikke spise godteri hver dag.
+b) Do you have to work at Saturday?:
+	Må du jobber på lørdag?
+c) She needs a cup of chocolate:
+	Hun trenger en kopp sjokolade.
+d) They do not want to buy meatballs:
+	De vil ikke kjøpe kjøttboller.
+e) You are drinking too much coffee. You should also drink water:
+	Du drikker for mye kaffe. Du må også drikke vann.
+
+2. Oversett:
+a) Do you want to eat the dinner? No, thanks i am not hungry:
+	Vil du spise middagen? Nei, takk, jeg er ikke sulten.
+b) He does not like this dish:
+	Han liker ikke denne retten.
+c) You have to learn for the exam:
+	Du bør lære til eksamen.
+d) She is pregnant and not allowed to drink alcohol:
+	Hun er graving og hun må ikke drikke alkohol.
+e) Do you drink tea every day?:
+	Drikker du te hver dag?
+f) I will order this main dish and that dessert:
+	Jeg skal bestille denne hovedretten og den dessert.
+
+## Kosetid
+
+1. en brus
+2. en mineralvann
+3. en frokost
+4. frossen
+5. kjøttboller
+6. tørst
+7. sjampanje
+8. å bestille
+9. godteri
+10. en rett
+11. en kopp
+12. en lørdag
