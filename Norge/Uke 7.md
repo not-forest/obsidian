@@ -139,3 +139,29 @@ e) Can you describe the "Z" generation?:
 
 ## Repetisjon:
 
+a) She is a single child, however she has many cousins:
+	Hun er en enebarn, men hun har mange kusiner.
+b) Kathrine's and Jacob's daughter is a journalist and write to newspapers:
+	Datteren til Katrine og Jacob er journalist og skriver i avisen.
+c) I want to buy a black bag:
+	Jeg vil kjøpe et svart veske.
+d) Papa is a cook, and mommy is teaching Norwegian at the school.
+	Pappa er kokk, og mamma lærer norsk på skolen.
+e) Gross-elders are living in a modern house:
+	Besteforeldrene bor i et moderne hus.
+f) Are you a receptionist? No i am not. I work as a waiter:
+	Er du resepsjonist? Nei, det er jeg ikke. Jeg jobber som servitør.
+
+## Kosetid
+
+1. et vakkert hus.
+2. farmor.
+3. et praktisk hus.
+4. tvilling.
+5. kjernefamilie.
+6. en interessant film.
+7. å beskriver.
+8. gamle bilder.
+9. en onkel.
+10. ei kusine.
+11. en generasjon.
