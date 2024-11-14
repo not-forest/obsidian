@@ -1,4 +1,4 @@
-## 
+## Präsens
 
 |           | arbeiten  | fahren | sprechen | sehen  | wechseln  |
 | --------- | --------- | ------ | -------- | ------ | --------- |
