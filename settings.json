@@ -1,0 +1,83 @@
+{
+  // UI
+  "workbench.statusBar.visible": true,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 0.5,
+  "zenMode.hideLineNumbers": false,
+
+  // Editor Behavior
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.linkedEditing": true,
+
+  // Terminal
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+
+  // JS/TS Formatting
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {},
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Vim
+  "vim.leader": "<space>",
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION - Buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+    { "before": ["<leader>", "b", "b"], "commands": [":bprevious"] },
+    { "before": ["<leader>", "b", "n"], "commands": [":bnext"] },
+
+    // Splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // Panes
+    { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
+    { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
+    { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
+    { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
+
+    // File/Buffer Actions
+    { "before": ["<leader>", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["<leader>", "b", "f"], "commands": ["workbench.action.showAllEditorsByMostRecentlyUsed"] },
+    { "before": ["<leader>", "p"], "commands": ["editor.action.formatDocument"] },
+    { "before": ["<leader>", "t"], "commands": ["workbench.action.terminal.toggleTerminal"] },
+
+    // Save/Quit
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+
+    // Diagnostics
+    { "before": ["[", "d"], "commands": ["editor.action.marker.prev"] },
+    { "before": ["]", "d"], "commands": ["editor.action.marker.next"] },
+    { "before": ["<leader>", "c", "a"], "commands": ["editor.action.quickFix"] },
+
+    // File Close (requested)
+    { "before": ["<leader>", "c"], "commands": ["workbench.action.closeActiveEditor"] },
+
+    // LSP Hover
+    { "before": ["g", "h"], "commands": ["editor.action.showDefinitionPreviewHover"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    { "before": ["<leader>", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "workbench.activityBar.location": "hidden"
+}
