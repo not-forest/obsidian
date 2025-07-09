@@ -3,4 +3,4 @@
 3. (03/07) - Szkolenie Agile & Scrum. Zadania praktyczne
 4. (04/07) - Wybór głównego projektu do zrealizowania. Podział na zespoły. Omówienie pierszych działań
 5. (07/07) - Szkolenie o narzędziach firmy. Platformy do kursów zewnętrznych i wewnętrznych, narzędzia zarządzające.
-6. (07/08) - 
+6. (08/07 - 09/07) - Instalacja narzędzi do tworzenie, kompilacji i debugowania kodu na używane mikrokontrolery. Synchronizacja członków zespolu
