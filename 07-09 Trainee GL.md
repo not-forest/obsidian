@@ -10,4 +10,5 @@
 10. (16/07) - Spotkanie organizacyjne. Stworzenie grupowej presentacji na temat wybranego rozwiązania.
 11. (18/07) - Presentacja produktu realizowanego przez zespół.
 12. (22/07) - Planowanie pierwszego sprinta. Wystawienie pierwszych issues do repozytorium projektu oraz dodanie pierwszej wersji kodu startowego. Podział komponentów systemu do zaprogramowania pomiędzy członkami zespołu Embedded.
-13. (24/07) - 
+13. (24/07) - Omówienie szczegołów wewnątrz poszczególnych zespołów. Przedyskutowanie postępów każdego członka w zespolie.
+14. ()
