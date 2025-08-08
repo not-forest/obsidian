@@ -117,11 +117,89 @@ f) This is the biggest bank in Norway.
 
 ### Verb i fokus
 
-| å legge vekt på noe     |     |
-| ----------------------- | --- |
-| å være redd for noe     |     |
-| å være nødt til noe     |     |
-| å ta ansvar for noe     |     |
-| å ta kontakt med noen   |     |
-| å være forelsket i noen |     |
- 
+| å legge vekt på noe     | to emphasize something                 |
+| ----------------------- | -------------------------------------- |
+| å være redd for noe     | to be afraid of something              |
+| å være nødt til noe     | to have to do something                |
+| å ta ansvar for noe     | to take a responsibility for something |
+| å ta kontakt med noen   | to contact with someone                |
+| å være forelsket i noen | to be in love with someone             |
+ 1. Øv deg
+a) Læreren <mark style="background: #FFF3A3A6;">legger vekt på</mark> grammatikken. Vi gjør veldig mange grammatikkoppgaver.
+b) Vi skal ha en vanskelig eksamen snart, og vi <mark style="background: #FFF3A3A6;">er nødt til</mark> å pugge hver dag.
+c) Du har gjort feil, og du <mark style="background: #FFF3A3A6;">må ansvar for</mark> dette nå.
+d) Hun har mistet jobben og <mark style="background: #FFF3A3A6;">er redd for</mark> å ikke ha råd til å betale regningene.
+e) Jeg vil gjerne få litt informasjon om deres kurs. Hvem skal jeg <mark style="background: #FFF3A3A6;">ta kontakt med</mark>?
+f) Sofie kan fortelle om Filip i timevis. Faktisk snakker hun bare om ham. Jeg tror hun <mark style="background: #FFF3A3A6;">er forelsket i</mark> ham.
+
+2. Oversett
+a) Contact with Lise. She will help you
+	Ta kontakt med Lise. Hun skal hjelpe deg.
+b) This house costs a fortune. You have to take a loan.
+	Dette huset koster en formue. Du er nødt til å ta opp et lån.
+c) Why are you afraid of him?
+	Hvordan er du redd for ham?
+d) Take responsibility for what you have said.
+	Ta ansvar for hva du har sagt.
+
+### Kultur og språk
+
+- De ti høyeste fjelltoppene i verden ligger i Himalaya
+- Mindre enn en prosent av alt vann på jorda er drikkevann
+- Minst 90 prosent av alle planter lever i en symbiose med sopp.
+- Sola er 4,5 milliarder år gammel.
+- Noen bambustyper kan vokse opptil 90 centimeter i døgnet. Du kan nesten se at de vokser.
+- Gull er mykest av alle metaller.
+- Jupiter er den største planeten i solsystemet. Den er over 300 ganger større enn jorda.
+- I en milliliter ferskvann er det en million bakterier.
+
+| en topp       | top, peak      |
+| ------------- | -------------- |
+| et drikkevann | drinking water |
+| minst         | at least       |
+| ei plante     | plant          |
+| å vokse       | to grow        |
+| myk           | soft           |
+| et metall     | metal          |
+| en planet     | planet         |
+| et solsystem  | solar system   |
+| en bakterie   | bacterium      |
+1. Oversett
+a) Children grow so fast!
+	Barna vokser så fort!
+b) There are eight planets in the solar system
+	Det er åtte planeter i solsystemet.
+c) This sofa is very soft
+	Denne sofaen er veldig myk
+d) They have many plants in the garden
+	De har mange planter i hagen.
+e) There are very little drinking water
+	Der er veldig lite drikkevann her.
+
+### Repetisjon
+
+a) I have to pay up a bigger sum
+	Jeg må å ta ut et større beløp.
+b) She inherited her dad's nose and her mom's eyes
+	Hun har arvet nesen til faren sin og øyene til moren sin.
+c) Do you have any small change in your wallet?
+	Har du noen småpenger i lommeboka din
+d) This green backpack is the heaviest
+	Denne grønne ryggsekken er tyngst
+e) She is afraid that she will have financial troubles
+	Hun er redd for å havne i pengeproblemer.
+
+### Kosetid
+
+1. sedler
+2. en inntekt
+3. et budsjett
+4. dagpenger
+5. en minibank
+6. et beløp
+7. å spare
+8. yngre
+9. en formue
+10. en regning
+11. bedre
+
