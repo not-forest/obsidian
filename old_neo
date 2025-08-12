@@ -1,0 +1,14 @@
+# 1. Download the prebuilt Linux x86_64 tarball
+curl -LO https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
+
+# 2. Extract it
+tar xzvf nvim-linux64.tar.gz
+
+# 3. Move it to /opt (or somewhere you like)
+sudo mv nvim-linux64 /opt/nvim
+
+# 4. Add to PATH (temporary for this session)
+export PATH=/opt/nvim/bin:$PATH
+
+# 5. Test
+nvim --version
