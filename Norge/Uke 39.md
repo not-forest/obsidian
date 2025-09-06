@@ -56,3 +56,116 @@ k) Han kom på jobben till tross for at han var syk - He came to work despite th
 | å ha gode/dårlige arbeidsforhold | to have good/bad working conditions |
 | arbeidsforhold                   | working conditions                  |
 | en sykemelding                   | sick note                           |
+1. Oversett
+1)
+Kristian jobber på kontoret. Der har han et lite skrivebord og en komfortabel kontorstol. På rommet finnes det også en datamaskin, en skriver og mange hyller med permer. Vanligvis begynner Kristian på jobb klokka åtte. Han slår på datamaskinen og leser e-poster. Av og til går han på et møte med arbeidskollegene sine. De diskuterer forskjellige projekter. Han spiser lunsj i kantinen klokka tolv. Etterpå snakker han med kunder og skriver en rapport. Klokka fire slutter han å arbeide og drar hjem.
+2)
+Emilie jobber ofte selvstendig, men hun liker også å jobbe i team. Noen ganger hun går på tjenestereise så hun kan møte kundene på deres kontor. Det er lettere å løse problemer hvis de snakker med hverandre ansikt til ansikt.
+3)
+Marit har mange arbeidsoppgaver. Hun har sjelden en fridag, og hun jobber ofte i helgene. Sjefen hennes synes at hun gjør et godt arbeid, og han skal gi henne en bonus.
+4)
+Henrik føler seg dårlig i dag. Han kan ikke dra på jobb og trenger en sykemelding. Han må avlyse to møter og be en arbeidskollega om å forberede en rapport for kunden. Henrik håper at han blir frisk snart. Han liker jobben sin, og han synes at det er gode arbeidsforhold der.
+
+### Repetisjon
+
+a) He must cancel a meeting, because he is sick
+	Han må avlyse en møte, fordi han er syk.
+b) We can do a break, if you wish
+	Vi kan gjøre en pause hvis du vil.
+c) She says that we need several binders:
+	Hun sier at jeg trenger flere permer.
+d) They are asking, if i like to work in team
+	De spør om jeg liker å jobbe i team.
+e) I am working overtime, to take a free day on Friday
+	Jeg jobber overtid så jeg kan ta meg en fridag på fredag.
+
+| å lure på noe           | to wonder about something         |
+| ----------------------- | --------------------------------- |
+| å ha sjanse til å       | to have a change to               |
+| å ha tid til noe        | to have time for something        |
+| å være for ... til noe  | to be too ... for something       |
+| å passe på noe/noen     | to take care of somethign/someone |
+| å være trøtt av noe     | to be tired of something          |
+| å lengte etter noe/noen | to miss something/someone.        |
+1. Øv deg
+a) Han <mark style="background: #FFF3A3A6;">er trøtt av</mark> å jobbe overtid. Han trenger en fridag.
+b) Hun<mark style="background: #FFF3A3A6;"> har sjanse til</mark> å studere i utlandet, og hun gleder seg til det.
+c) Jeg <mark style="background: #FFF3A3A6;">lurer på</mark> om du vil bli med på en fest på lørdag.
+d) Du <mark style="background: #FFF3A3A6;">er for ung til </mark>å drikke øl. Du er bare seksten nå.
+e) Han <mark style="background: #FFF3A3A6;">har ikke tid til</mark> å trene tre ganger i uka.
+f) Hun <mark style="background: #FFF3A3A6;">lengter etter</mark> vennene sine i hjemlandet. Hun skal besøke dem snart.
+g) Kan du <mark style="background: #FFF3A3A6;">passer på</mark> barna i kveld? Jeg vil ta en tur i butikken.
+
+2. Oversett
+a) He says, that he misses school times.
+	Han sier at han lengter skoletiden.
+b) I am never too old to try something new.
+	Jeg er aldri for gammel til å prøve noe nytt.
+c) What are you wondering about?
+	Hva lurer du på?
+d) I am a little bit tired of taking care of children from morning to evening
+	Jeg er litt trøtt av å passe på barna fra morgen til kveld.
+
+### Kultur og språk
+
+- Ha et ryddig skrivebord og hold orden i dine dokumenter.
+- Lag en to do-liste i prioritert rekkefølge
+- Fokuser på en oppgave av gangen.
+- Gjør lignende oppgaver etter hverandre.
+- Planlegg dine kaffepauser. Det er lett å bli distrahert av kollegaer som vil småprate.
+- Unngå tidstyver: ikke sjekk mobilen og sosiale medier hvert femte minutt.
+- Ikke ta på deg for mange oppgaver. Ta en prat med sjefen hvis du føler at du har altfor mye å gjøre.
+
+| ryddig              | tidy                       |
+| ------------------- | -------------------------- |
+| å holde orden i noe | to keep order in something |
+| en rekkefølge       | ordering                   |
+| å fokusere på noe   | to fokus on something      |
+| av gangen           | once                       |
+| lignende            | similar                    |
+| å planlegge         | to plan                    |
+| å distrahere        | to distract                |
+| å småprate          | to chat, to small talk     |
+| å unngå             | to avoid                   |
+| en tidstyv          | time thief                 |
+| sosiale medier      | social media               |
+1. Oversett
+a) We have to focus on solving our problems:
+	Vi må fokusere på å løse problemene våre
+b) Kristin is not that tidy as Helene
+	Kristin er ikke så ryddig som Helene
+c) Jens and Marit are always doing a small talk with coffee
+	Jens og Marit småprater alltid hvor de drikker kaffe.
+d) We are trying to keep order at house
+	Vi prøver å holde orden hjemme.
+e) He is tired of going to meetings.
+	Han er trøtt av å gå på møter.
+
+### Repetisjon
+
+a) I am wondering if we can do a break now.
+	Jeg lurer på om vi kan ta en pause nå
+b) She did not got a bonus, despite the fact that she worked really hard:
+	Hun fikk ikke en bonus til tross for at hun har jobbet hardt.
+c) He misses summer and good weather.
+	Han lengter sommer og god vær.
+d) We have a client, which likes to do small talks with us.
+	Vi har en kunde som liker å småprater med oss.
+e) Do you have time to discuss the report?
+	Har du tiden å diskutere rapporten?
+
+### Kosetid
+
+1. en tidstyv
+2. å distrahere
+3. en teamarbeid
+4. en rekkefolge
+5. å unngå
+6. en kopimaskin
+7. en arbeidstime
+8. ryddig
+9. et pauserom
+10. selvstendig
+11. en prosjekt
+12. ei arbeidsforhold
+
