@@ -120,4 +120,91 @@ i) Die Firma wird nur einen Bewerber einstellen - The company will only hire one
 | zu etwas einladen      | to invite to something |
 1. Übung
 a) Momentan arbeite ich an einem wichtigen Projekt für eine internationale Firma mit Sitz in London - I am currently working on an important project for an international company based in London.
-b) Ich have mich online sich die Stelle beworben.
+b) Ich have mich online sich die Stelle beworben. - I have applied on the job that was advertised online.
+c) Ab dem ersten November werde ich bei Deutsche Com als Programmierer arbeiten - From November 1st I will be working at Deutsche Com as a programmer.
+d) Samsung lädt mich zu einem Vorstellungsgespräch ein. - Samsung invites me for an interview.
+
+2. Übung
+a) I am applying for a position in Volkswagen
+	Ich bewerbe sich um eine Arbeitsstelle bei Volkswagen.
+b) In the future i will be working in Google.
+	In der Zukunft werde ich bei Google arbeiten.
+c) My daughter is working on her book.
+	Meine Tochter arbeitet an ihrem Buch.
+d) My chef invites us for a dinner.
+	Mein Chef lädt uns zum ein Abendessen ein
+e) I am working as an accountant for German company with offices in Wroclaw.
+	Ich arbeite als Buchalter für eine deutsche Firma mit Sitz in Wroclaw
+
+### Rund ums Verb
+| Infinitiv | Imperfekt | Perfekt      |
+| --------- | --------- | ------------ |
+| beginnen  | begann    | hat begonnen |
+1. Übung
+a) When does the German lecture starts?
+	Um wie viel Uhr beginnt der Deutschunterricht?
+b) She started a new diet.
+	Sie begann eine neue Diät.
+c) The meeting have started in 15:00
+	Das Treffen hat um 15:00 Uhr begonnen.
+
+2. Übung
+a) Am späten Nachmittag begann es zu regnen.
+b) In Polen beginnen die Kinder ihre Schulbildung im Alter von sechs oder sieben Jahren. Wie sieht es in Deutschland aus?
+c) Heute werde ich mit meinem neuen Projekt beginnen.
+d) Mein mann beginnt morgen eine neue Arbeit.
+e) Beginnt ihr wieder mit dem Training?
+f) Mila und Ana werden morgen eine neue Diät beginnen. Glaubst du sie schaffen es?
+g) Die Vorstellung hat um 20:00 Uhr begonnen.
+h) Am 13. August 1961 begonnen die Arbeiten am Bau der Berliner Mauer.
+i) Beginnst du langsam, sein Verhalten zu verstehen?
+j) Die Reisemesse in Köln hat gerade eben begonnen.
+k) Ab nächstem Monat beginnen wir mit der Arbeit an dem wichtigen Projekt.
+
+### Wortbildung
+
+1. Übung
+a) Ich have ihn angerufen, aber er war nicht erreichbar. - I called him, but he was not reachable.
+b) Sogar die schwierigsten Probleme sind lösbar. - Even the most difficult problems are solvable.
+c) Meine Kündigbar muss noch von meinem Chef unterschrieben werden. - My termination notice still needs to be signed by my boss
+d) Das Projekt hört sich einfach und machbar an. - The project sounds simple and doable.
+e) Ihre Bewerbung für diese Stelle war erfolgreich. - Your application for this position was successful.
+f) Sein Chef war wütend. Er muss mit einer Entlassung rechnen und schnell einen besseren Job finden. - His boss was furious. He's facing dismissal and needs to find a better job quickly.
+g) Ich habe eine Einladung zum Vorstellungsgespräch erhalten. - I have received an invitation to an interview.
+h) Das Buch ist zur Zeit leider nicht verfügbar - Unfortunately, the book is currently not available.
+i) Ihre Unterschrift ist nicht lesbar. Ist der Vertrag trotzdem gültig? - Your signature is not readable. Is the contract still valid?
+
+### Wiederholung
+
+a) Here it is about your qualification. We cannot employ you.
+	Hier geht es um ihre Qualifikationen. Wie können Sie nicht einstellen.
+b) In my company one can work in part time.
+	Im meiner Firma kann man in Teilzeit arbeiten.
+c) In Switzerland one can earn more than in Germany.
+	In der Schweiz verdient man mehr als in Deutschland.
+d) I would like to finally work on my own account and have flexible working hours.
+	Ich möchte endlich auf eigene Rechnung arbeiten und flexible Arbeitszeiten haben.
+e) 
+- How is it going?
+- Thank you, i am doing good. I have got a raise and was promoted.
+	- Wie geht es dir?
+	- Danke, es geht mir gut. Ich wurde befördert und ich have eine Gehaltserhöhung bekommen.
+f) In my company one does not work overtime.
+	Im meiner Firma macht man keine Überstunden.
+g) Her wife starts her work and 08:00.
+	Seine Frau beginnt ihre Arbeit um 08:00 Uhr.
+
+## Kreuzworträtsel
+
+1. der Arbeitsvertrag
+2. die Abteilung
+3. unterschrieben
+4. durch die Blume sagen
+5. an etwas arbeiten
+6. auf eigene Rechnung
+7. die Zukunft
+8. verdienen
+9. lesbar
+10. die Gehaltserhöhung
+11. beginnen
+
