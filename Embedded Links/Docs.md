@@ -1,5 +1,14 @@
 Here lies all important links to datasheets, reference manuals and documents of different micro controllers and other embedded system parts.
 
+#### TODO!
+
+- Wireless protocols (BLE, ZigBee, Thread, etc.)
+- Near-field communication and RFID (NFC, MIFARE, Legic, etc.)
+- IoT protocols (MQTT, CoAP, etc.)
+- Publick Key Infrastructure (PKI) and cryptography
+- Understanding of **GNSS** and **cellular** **communication protocols.**
+- **embedded security best practices** (e.g., secure boot, encryption).
+- Integrate with on-chip and external interfaces including CAN, OBD-II, GNSS, cellular modems, and BLE.
 # STM32:
 - [[stm32f103]]
 
