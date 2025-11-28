@@ -57,8 +57,10 @@ Where:
 - *k* is a **secret data** like key or other security critical data that *T* must cover;
 - *A* execution time measured by *E*;
 
+### Example 2 (Attack on naive password match function).
+
 Example below shows a computational process *T* that computes b = pwd_match(G, size), and uses **secret password** *P* that it shall cover.
-### Example 2.
+
 ```c
 const char *P = "password_can_be_obtained_fast_even_though_long123";
 const size_t P_LEN = sizeof(P);
@@ -88,3 +90,24 @@ Timing attack can easily be used on such algorithm, because it's execution time 
 - *Dictionary attack* - doesn't require knowledge of **P_LEN** from start. Requires **O(D)** guesses and **does not guarantee the recovery of P**.
 - *Side Channel Attack* (Attack 1) - doesn't require knowledge of **P_LEN** from start. Requires **O(A * n)** guesses and **guarantees recovery of P**.
 
+### Example 3. (Attack on AES128 algorithm)
+
+Normally *proper* AES block cipher implementations are **data-independent**, they are using precomputed T-tables or a **constant-time functions** mentioned later in this chapter. Some *constrained devices* avoid huge T-tables to save memory and may implement constant-time function alternatives. Those data-dependent implementations are very common on such devices, therefore it is important to understand why they are unsafe to use.
+
+`The internal algorithm of AES cipher shall be remembered at that point.`
+
+The main concern is not the entire implementation, but only a small function that is **data-dependent** called *xtime*, which is used to involve cipher key, computing round keys during encryption, rather than using pre-computed ones.
+
+```c
+	uint8_t xtime(uint8_t x) {
+		if (x >> 7) {
+			return (x << 1) ^ 0x11B;
+		} else {
+			return (x << 1);
+		}
+	}
+```
+
+That conditional *XOR* operation is clearly seen in this example. Different compilers might optimize the function differently based on the *target architecture*, however all of them will have a time delay based on input data, which is enough to __crack the entire cipher key :)__.
+
+Consider key *k* that contains unknown secret key and *m* as plain message which an attacker can provide to the function. Adversary don't know the value of *k*, but can provide different values of *m* and measure time properly.
