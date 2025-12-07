@@ -111,3 +111,64 @@ The main concern is not the entire implementation, but only a small function tha
 That conditional *XOR* operation is clearly seen in this example. Different compilers might optimize the function differently based on the *target architecture*, however all of them will have a time delay based on input data, which is enough to __crack the entire cipher key :)__.
 
 Consider key *k* that contains unknown secret key and *m* as plain message which an attacker can provide to the function. Adversary don't know the value of *k*, but can provide different values of *m* and measure time properly.
+
+## TODO! WRITE CHAPTER FULLY ON ATTACKS.
+
+## Constant-Time Programming
+
+> **Constant-Time Programming** - programming paradigm that protects code implementations gainst side-channel atacks, by preventing time-based secret data leakage.
+
+Custom functions that use *masking* are used to omit branching behavior, by obtaining a **condition**, **true** output and **false** output, then returns the output by using the condition mask.
+
+```c
+int ct_select(int condition, int true_value, int false_value) {
+	int mask;
+	mask = condition ^ (condition - 1);
+	mask = mask & ~condition;
+	mask = mask >> (sizeof(int) * CHAR_BIT - 1);
+	
+	return (~mask & true_value) | (mask & false_value);
+}
+```
+
+The above implementation assumes the following:
+- 32-bit integers on the platform;
+- uses **two's compliment** to represent negative numbers;
+- **arithmetic shift right** for negative numbers (Undefined behavior in C/C++ standards, but true on practice);
+
+To eliminate secret-dependent branches, a program shall execute **all branches** and then use the **constant-time** implemented function to return a value that is actually selected.
+
+### Example. Eliminating One IF statement branching in "square-and-multiply" algorithm.
+
+```c
+const uint8_t D = 0b10011011;
+
+uint32_t sqandmul(uint32_t b, uint32_t m) {
+	uint32_t x, temp;
+	for (int i = 0; i < 8; ++i) {
+		x = x = pow(2, x) % m;
+		temp = x = x * b % m;
+		x = ct_select(((D >> i) & 0xFE), t, x);
+	}
+	return x;
+}
+```
+
+The above reimplementation ensures, that the execution time is constant, and does not depend on **secret exponent D**. 
+
+### Example. Eliminating Secret-Dependent Memory Access.
+
+To prevent leakage of table indexes, the implementation shall access **all** memory indexes within the table, to prevent data-dependent execution.
+
+```c
+uint32_t ct_ttable(uint8_t index, uint32_t *T, size_t len) {
+	uint32_t rv = 0;
+	
+	for (int i = 0; i < len; ++i) {
+		rv = ct_select(i == index, T[i], rv);
+	}
+	return rv;
+}
+```
+
+The above impementation of **constant-time** access to 1-dimentional array, mutates the value of `rv` only when index matches. Otherwise rewrites it with the previous value, therefore doing a no-op and taking the exact amount of time, to prevent time-dependent behavior.
