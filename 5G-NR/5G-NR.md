@@ -52,9 +52,17 @@ Standard defines two **FR (Frequency Ranges):
 
 ## Contents
 #### Overall
-- [[Curated List of Abbreviation]]
+- [[Curated List of Abbreviations (5G)]]
 - [[Network Structure]]
 - [[OFDM]]
 #### PHY
 - [[Frame Structure]]
+- [[Propagation Model]]
+- [[Power Control]]
+- [[Beam Forming and Management]]
+- [[PDCCH]]
 - [[PDSCH]]
+- [[PUSCH]]
+- [[PUCCH]]
+- [[MIMO]]
+- [[DCI]]
