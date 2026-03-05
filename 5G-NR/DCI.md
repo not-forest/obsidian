@@ -4,15 +4,16 @@
 
 > **Fallback Format** - less flexible scheduling, **smaller control overhead**, limited functionality.
 
-| Format0_0 | Scheduling **PUSCH** in one cell.                                                         | fallback format |
-| --------- | ----------------------------------------------------------------------------------------- | --------------- |
-| Format0_1 | Scheduling **PUSCH** in one cell.                                                         |                 |
-| Format1_0 | Scheduling **PDSCH** in one cell.                                                         | fallback format |
-| Format1_1 | Scheduling **PDSCH** in one cell.                                                         |                 |
-| Format2_0 | Notify a group of **UEs** of the **slot format**                                          |                 |
-| Format2_1 | Notify a group of **UEs** resources where they may assume no transmission for the **UE**. |                 |
-| Format2_2 | **TPC** commands for **PUCCH** and **PUSCH** channels                                     |                 |
-| Format2_3 | **TPC** commands for **SRS** transmissions.                                               |                 |
+| **PDCCH** format | Description                                                                               | Is fallback?    |
+| ---------------- | ----------------------------------------------------------------------------------------- | --------------- |
+| Format0_0        | Scheduling **PUSCH** in one cell.                                                         | fallback format |
+| Format0_1        | Scheduling **PUSCH** in one cell.                                                         |                 |
+| Format1_0        | Scheduling **PDSCH** in one cell.                                                         | fallback format |
+| Format1_1        | Scheduling **PDSCH** in one cell.                                                         |                 |
+| Format2_0        | Notify a group of **UEs** of the **slot format**                                          |                 |
+| Format2_1        | Notify a group of **UEs** resources where they may assume no transmission for the **UE**. |                 |
+| Format2_2        | **TPC** commands for **PUCCH** and **PUSCH** channels                                     |                 |
+| Format2_3        | **TPC** commands for **SRS** transmissions.                                               |                 |
 ## DCI Processing Chain
 
 DCI processing chain:

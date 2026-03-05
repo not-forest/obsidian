@@ -64,5 +64,14 @@ Standard defines two **FR (Frequency Ranges):
 - [[PDSCH]]
 - [[PUSCH]]
 - [[PUCCH]]
+- [[PBCH]]
 - [[MIMO]]
 - [[DCI]]
+- [[UCI]]
+- [[DMRS]]
+- [[SSB]]
+
+## Knowledge Base
+
+- [5G Explained Matlab](https://www.mathworks.com/videos/series/5g-explained.html)
+- [ShareTechnote](https://www.sharetechnote.com/html/5G/Handbook_5G_Index.html)
