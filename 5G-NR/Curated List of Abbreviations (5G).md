@@ -15,6 +15,7 @@
 - **HARQ** - Hybrid Automatic Repeat Request (*Error control method that uses forward error correction + automatic repeat request.*)
 - **MIMO** - Multiple-Input Multiple-Output (*Matrix-like antenna technology*)
 - **MU-MIMO** - Multi-User MIMO
+- **CoMP** - Coordinated Multi-Point (*multiple cells coordinate their transmission and receptions to improve signal quality*)
 - **CIR** - Channel Impulse Response
 - **PAPR** - Peak-to-Average Power Ratio
 - **PA** - Power Amplifier
@@ -29,6 +30,7 @@
 - **FH** - Frequency Hopping (*Technique where carrier frequency changes over time. Reduces interference, better for security*)
 - **MCT** - Minimum Codeword Transform (*Minimum Hamming distance of a code*)
 - **SFN** - System Frame Number
+- **PMI** - Precoding Matrix Indicator (*Precoding matrix index, reported index, that tells **gNB** about **beamforming***)
 
 - **[[OFDM]]** - Orthogonal Frequency Division Multiplexing (*modulation technique to send data over orthogonal subcarriers in parallel*)
 - **CP-OFDM** - OFDM with Cyclic Prefix (***OFDM** with **CP** appended on each symbol at the start to prevent inter symbol interference.*)
@@ -63,10 +65,14 @@
 - **RS** - Reference Signal (*Sent by **gNB** so **UE** can estimate radio channel, perform equalization, measure signal quality*). Cell specific RS is not present in 5G.
 	- **[[DMRS]]** - Demodulation RS (*allows to estimate the channel for demodulation of **PDSCH** or **PUSCH***)
 	- **PTRS** - Phase Tracking RS (*allows to correct phase noise: **PDSCH** phase tracking*)
+	- **TRS** - Tracking Reference Signal (*Not the same as **PTRS***)
 	- **CSI-RS** - Channel State Information RS (*Channel quality measurements and feedback*)
 	- **SRS** - Sounding RS (*uplink reference signal from **UE** to **gNB***)
 - **PSS** - Primary Synchronization Signal (*Allows to detect the cell, provides symbol timing*)
 - **SSS** - Secondary Synchronization Signal (*Helps determine the Physical Cell ID, provides frame timing, indicates duplex mode and other info.*)
+
+- **NZP CSI-RS** - Non-Zero Power CSI-RS
+- **ZP CSI-RS** - Zero Power CSI-RS (*Tells information about what locations shall guaranteed be zero.*)
 #### Channels
 - **[[PDSCH]]** - Physical Downlink Shared Channel (*Carries user data **gNB** to **UE**.*)
 - **[[PDCCH]]** - Physical Downlink Control Channel (*Carries control info downlink*)
