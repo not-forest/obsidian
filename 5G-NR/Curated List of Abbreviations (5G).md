@@ -4,6 +4,7 @@
 - **LTE** - Long-Term Evolution (*4G older technology*)
 - **RAT** - Radio Access Technology
 - **RAN** - Radio Access Network
+- **TRP** - Transmission Reception Point
 - **UE** - User Equipment (*Any device with access to mobile network in cellular systems*)
 - **gNB** - next generation Node B (*Base stations in 5G networks*)
 - **BW** - Bandwidth (*Range of frequencies available for transmitting a signal*)
