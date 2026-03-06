@@ -22,6 +22,8 @@
 - **PA** - Power Amplifier
 - **SI** - System Information (*Common information that tells **UE** how o operate in the cell.*)
 - **MCS** - Modulation and Coding Scheme (*decides the modulation type and coding rate*)
+- **MCS** - Mobile Communication System
+- **FRMCS** - Future Railway Mobile Communication System
 - **TPC** - Transmit Power Control (***gNB** controls how much transmit power **UE** must use when sending: **PUSCH, PUCCH, SRS, PRACH**)
 - **RNTI** - Radio Network Temporary Identifier (*identifier that **gNB** uses to address **UE** on physical channel.*)
 - **TA** - Timing Advance (*command sent by **gNB** to "delay" the **UE** so that it's **UL** transmission is aligned with **gNB***)
@@ -33,8 +35,15 @@
 - **SFN** - System Frame Number
 - **PMI** - Precoding Matrix Indicator (*Precoding matrix index, reported index, that tells **gNB** about **beamforming***)
 - **5GC** - 5G Core
+- **5GCN** - 5G Core Network
 - **BBU** - Base Band Unit (*Used in O-RAN in case of 4G*)
 - **IQ** - In-phase Quadrature (*Time domain digital signal. Result of **IFFT** from **OFDM***)
+- **RRM** - Radio Resource Measurements
+- **RSRP** - Reference Signal Received Power
+- **RSRQ** - Reference Signal Received Quality
+- **SNR** - Signal to Noise Ratio
+- **SINR** - Signal to Interference plus Noise Ratio
+- 
 
 - **[[OFDM]]** - Orthogonal Frequency Division Multiplexing (*modulation technique to send data over orthogonal subcarriers in parallel*)
 - **CP-OFDM** - OFDM with Cyclic Prefix (***OFDM** with **CP** appended on each symbol at the start to prevent inter symbol interference.*)
