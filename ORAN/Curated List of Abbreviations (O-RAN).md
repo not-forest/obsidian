@@ -1,0 +1,22 @@
+- **O-RAN** - Open RAN
+- **VNF** - Virtualized Network Function
+- **RU** - Radio Unit (*Part of RAN that handles everything closer to **RF** domain.*)
+- **DU** - Distributed Unit (*Handles lower **MAC** and lower **PHY** processing tasks)
+- **RIC** - RAN Intelligent Controller
+- **CU-CP** - Central Unit - Control Plane
+- **CU-UP** - Central Unit - User Plane
+- **Near RT RIC and Non-RT RIC** - Near real-time and not-realtime RIC equivalents
+- **SMO** - Service Management and Orchestration Framework (*Responsible for RAN domain management*)
+- **F-CAPS** - File, Communication, Accounting, Performance, Security
+- **O-Cloud** - Open Cloud (*Clound infrastructure in **O-RAN** that provides compute, storage and network resources.*)
+- **AAL** - Acceleration Abstraction Layer (*Hides **O-Cloud** related accelerations behind an open interface*)
+- **xAPP** - Any Application (*Designed to be run on **Near-RT RIC***)
+- **rAPP** - RAN Application (*Designed to be run on **Non-RT RIC***)
+- **EI** - Enrichment Information (*Contextual data supplied with **xAPPs, rAPPs** to improve analytics, optimization and decision making in **RAN***)
+
+### Intefaces
+- **OFM-Plane** - Open Fronthaul M-Plane (*Interface between **SMO** and **RU***)
+- **A1** - Interface A1 (*Interface between Non-RT and Near-RT RICs for **RAN optimizations***)
+- **O1** - Interface O1 (*Interface between **SMO** and **VNF** for **F-CAPS** support*)
+- **O2** - Interface O2 (*Interface between **SMO** and **O-Cloud**)
+- **R1** - Interface R1 (*Internal **Non-RT RIC** interface that provides **API** to **rAPPs***)

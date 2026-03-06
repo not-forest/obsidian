@@ -32,6 +32,9 @@
 - **MCT** - Minimum Codeword Transform (*Minimum Hamming distance of a code*)
 - **SFN** - System Frame Number
 - **PMI** - Precoding Matrix Indicator (*Precoding matrix index, reported index, that tells **gNB** about **beamforming***)
+- **5GC** - 5G Core
+- **BBU** - Base Band Unit (*Used in O-RAN in case of 4G*)
+- **IQ** - In-phase Quadrature (*Time domain digital signal. Result of **IFFT** from **OFDM***)
 
 - **[[OFDM]]** - Orthogonal Frequency Division Multiplexing (*modulation technique to send data over orthogonal subcarriers in parallel*)
 - **CP-OFDM** - OFDM with Cyclic Prefix (***OFDM** with **CP** appended on each symbol at the start to prevent inter symbol interference.*)
