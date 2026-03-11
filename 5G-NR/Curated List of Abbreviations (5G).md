@@ -43,7 +43,11 @@
 - **RSRQ** - Reference Signal Received Quality
 - **SNR** - Signal to Noise Ratio
 - **SINR** - Signal to Interference plus Noise Ratio
-- 
+- **BER** - Bit Error Rate
+- **BLER** - Block Error Rate
+- **DTX** - Discontinuous Transmission (*Mechanism where transmitter stops transmitting some OFDM symbols intentionally to save power, reduce interference, etc.*)
+
+- **AWGN** - Additive White Gaussian Noise Channel
 
 - **[[OFDM]]** - Orthogonal Frequency Division Multiplexing (*modulation technique to send data over orthogonal subcarriers in parallel*)
 - **CP-OFDM** - OFDM with Cyclic Prefix (***OFDM** with **CP** appended on each symbol at the start to prevent inter symbol interference.*)
@@ -53,6 +57,15 @@
 - **RRC** - Radio Resource Control (*protocol layer that controls connection between **gNB** and **UE** and it's states.*)
 
 - **[[SSB]], SS Block** - Synchronization Signal Block (*Special transmission sent by **gNB** to **UE** for synchronization purposes, detection and basic system info.)
+
+- **BBI** - Base Band Infrastructure
+- **CBB** - Concurrency Building Blocks (*Model programming framework for cross-platform interface definitions*)
+- **EMCA** - Ericsson Many Core Architecture (*Proprietary architecture model*)
+- **LCEP** - Logical Connection Endpoint
+- **LDM** - Local Data Memory
+- **MTD** - Measurement Test Debug
+- **AxC** - Antenna Carrier (*Combination of every antenna and every carrier combination*)
+- 
 
 #### Blocks
 - **[[MIB]]** - Master Information Block (**Contains system bandwidth info, subcarrier spacing, system frame number, control resource configuration.**)

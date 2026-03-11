@@ -39,3 +39,17 @@
 - **F1-c and F1-u** - Interface F1 (*Connects **CU-CP** to **DU** for control and user plane data*)
 
 - **R1** - Interface R1 (*Internal **Non-RT RIC** interface that provides **API** to **rAPPs***)
+
+- **CELLMI** - (*Inteface used to configure NR cells*)
+- **SCMI** - (*Interface used to configure LTE and NR carriers*)
+- **SCCIMI** - (*Additional interface that provides information about sector carrier configuration to modules outside of **BBSC***)
+- **ACCI** - (*Used to configure antenna calibration function in a sector carrier*)
+- **B3** - (*Carries traffic and control data from L2 to DLL1 Upper*)
+- **C2-U** - (*Carries traffic data between upper and lower parts of L1, splitting L1 different hardware. Ericsson proprietary*)
+- **NG-OLLS** - (*Used to carry information between digital and radio units*). Divided into:
+	- **CAT-A** - remote radios
+	- **CAT-B** - beamforming radios
+- **C1, CPRI** - (*Connects DLPHY to radio hardware*). In two ways:
+	- **CPRI IQ** - constant streams of digital waveform samples
+	- **CPRI IQC** - intermediate control messages
+- 
