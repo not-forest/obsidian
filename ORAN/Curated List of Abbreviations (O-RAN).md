@@ -16,6 +16,8 @@
 - **rAPP** - RAN Application (*Designed to be run on **Non-RT RIC***)
 - **EI** - Enrichment Information (*Contextual data supplied with **xAPPs, rAPPs** to improve analytics, optimization and decision making in **RAN***)
 - **eCPRI** - enhanced Common Public Radio Interface
+- **NETCONF** - Network Configuration Protocol (*Used to install, delete and modify configurations on network devices using structured XML messages*)
+- **YANG** - Yet Another Next Generation (*Data modeling language to describe configuration structure based on which NETCONF will work*)
 
 - **C-Plane** - Control Plane (*Control data*)
 - **U-Plane** - User Plane (*IQ Samples*)

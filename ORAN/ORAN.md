@@ -1,6 +1,7 @@
 > **Open RAN** - open source interfaces that allows creating open, swappable, software-defined and cloud native **RANs**. Defined and maintained by **O-RAN Alliance**. 
 ![[Pasted image 20260306132906.png]]
 ![[Pasted image 20260306132927.png]]
+![[Pasted image 20260311120202.png]]
 
 **O-RAN** specification splits the radio protocol stack into three key blocks interconnected with three open interfaces:
 - **RRU** - Remote Radio Unit -> **Fronthaul** (**RF** + **Low PHY**)
@@ -9,6 +10,7 @@
 
 ![[Pasted image 20260306150125.png]]
 ![[Pasted image 20260306152606.png]]
+![[Pasted image 20260311114828.png]]
 ## Working Groups
 
 **O-RAN** specification is split into working groups:
@@ -101,6 +103,17 @@ One can define the following major **O-RAN** building architecture blocks:
 
 ![[Pasted image 20260306134117.png]]
 
+### rAPP
+
+**rAPP (RAN Application)** - applications that run on NonRT-RIC used to provide network optimizations, control loops etc:
+- network planning, resource optimization, load balancing;
+- integrated with AI/ML models for predictive analysis, anomaly detection, traffic forecasting;
+- QoS;
+- traffic steering (*Analyzes network traffic patterns and makes decision based on that history to route them better*);
+- energy savings (*Analyzes historical data, traffic patterns and cell load to find ways to put certain network elements to sleep*);
+- anomaly detection (*Find abnormal patterns and do actions accordingly*);
+- long-term balancing (*Allocated resources in balance based on history information*);
+- mobility optimization (*Predicts mobility by analyzing previous patterns*);
 ## DU & RU
 
 > **Distributed Unit (DU)** - responsible of **High PHY**, **MAC** and **RLC** layers, focusing on tasks like scheduling, modulation, and data processing.
