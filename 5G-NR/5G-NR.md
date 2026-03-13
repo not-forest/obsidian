@@ -71,6 +71,7 @@ Standard defines two **FR (Frequency Ranges):
 - [[UCI]]
 - [[DMRS]]
 - [[SSB]]
+- [[5G Performance Measurements (PHY)]]
 
 ## Knowledge Base
 

@@ -27,6 +27,7 @@
 - **TPC** - Transmit Power Control (***gNB** controls how much transmit power **UE** must use when sending: **PUSCH, PUCCH, SRS, PRACH**)
 - **RNTI** - Radio Network Temporary Identifier (*identifier that **gNB** uses to address **UE** on physical channel.*)
 - **TA** - Timing Advance (*command sent by **gNB** to "delay" the **UE** so that it's **UL** transmission is aligned with **gNB***)
+- **NF** - Network Function
 - **CORESET** - Control Resource Sets (***OFDM** resources where **PDCCH** is transmitted*)
 - **CQI** - Channel Quality Indicator (*Allows making decision about beamforming and scheduling*)
 - **SR** - Scheduling Request (*Allows **UE** to ask for scheduling*)
@@ -65,7 +66,11 @@
 - **LDM** - Local Data Memory
 - **MTD** - Measurement Test Debug
 - **AxC** - Antenna Carrier (*Combination of every antenna and every carrier combination*)
-- 
+- **PLMN ID** - Public Land Mobile Network Identifier (**uniquely identifies a mobile network operator)
+- **MCC** - Mobile Country Code (*3 digits*)
+- **MNC** - Mobile Network Code (*2 - 3 digits*)
+- **S-NSSAI** - Single Network Slice Selection Assistance Information (*Identifies 5g network slice*)
+- **GBR** - Guaranteed Bit Rate (*One of QoS defined in 3GPP-TS 23.501*)
 
 #### Blocks
 - **[[MIB]]** - Master Information Block (**Contains system bandwidth info, subcarrier spacing, system frame number, control resource configuration.**)
