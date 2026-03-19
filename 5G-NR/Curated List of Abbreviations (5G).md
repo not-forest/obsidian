@@ -47,8 +47,13 @@
 - **BER** - Bit Error Rate
 - **BLER** - Block Error Rate
 - **DTX** - Discontinuous Transmission (*Mechanism where transmitter stops transmitting some OFDM symbols intentionally to save power, reduce interference, etc.*)
+- **DRX** - Discontinuous Reception (*Mechanism where receiver stops receiving some OFDM symbols intentionally to save power, reduce interference, etc.*)
+- **C-RNTI** - Cell Radio-Network Temporary Identifier
+- **SUL** - Supplementary Uplink (*Additional associated **UL** channel, which works differently than carrier aggregation. Usually located on lower frequency bands, allowing for better data rates on "bad conditions". For example at the edge of the cell, where higher frequencies lead to huge data losses*)
+- **SUD** - Supplementary Downlink (*Not defined specifically, but can be created by carrier-aggregation, since the specification allows more **DL** carriers than **UL**, some of them can be used as a **SUD** carriers. Common usage is: combination of **paired** and **unpaired** spectra aggregation, to increase capacity and data rates*)
+- **SFI** - Slot Format Indicator (*Mechanism that signals current uplink-downlink allocation to a group of devices monitoring **DCI**. It says about the type of slot-format*)
 
-- **AWGN** - Additive White Gaussian Noise Channel
+- **AWGN** - Additive White Gaussian Noise
 
 - **[[OFDM]]** - Orthogonal Frequency Division Multiplexing (*modulation technique to send data over orthogonal subcarriers in parallel*)
 - **CP-OFDM** - OFDM with Cyclic Prefix (***OFDM** with **CP** appended on each symbol at the start to prevent inter symbol interference.*)
@@ -60,6 +65,9 @@
 - **[[SSB]], SS Block** - Synchronization Signal Block (*Special transmission sent by **gNB** to **UE** for synchronization purposes, detection and basic system info.)
 
 - **BBI** - Base Band Infrastructure
+- **BBAP** - Base Band Air Partitioning (*Part of L1 Lower section, which receives transfer from L1 Upper and instructs **BBSC** to transmit/receive/process data*)\
+- **BBSC** - Base Band Sector Carrier (*Transforms between frequency-domain channel data and per-antenna time-domain **IQ** sample streams*)
+
 - **CBB** - Concurrency Building Blocks (*Model programming framework for cross-platform interface definitions*)
 - **EMCA** - Ericsson Many Core Architecture (*Proprietary architecture model*)
 - **LCEP** - Logical Connection Endpoint
