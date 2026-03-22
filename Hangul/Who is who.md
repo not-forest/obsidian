@@ -1,8 +1,8 @@
 ## Nationalities
 
-| South Korea   | 폴란드  |
+| South Korea   | 한국   |
 | ------------- | ---- |
-| Poland        | 한국   |
+| Poland        | 폴란드  |
 | Japan         | 일본   |
 | China         | 중국   |
 | Germany       | 독일   |
@@ -66,4 +66,36 @@ Minsu is speaking about his family. Note that **우리** - means **our, ours** *
 우리 할아버지는 선생님이여요 - Our uncle is a teacher
 우리 할머니는 한국 사람이여요 - Our granny is korean.
 
+### Culture
 
+The way we speak to different people shall differ based on formality:
+- **to older people we don't know with respect**:
+	*last name* + [name] + [*their status*] + 님
+	Mr. Prof. Kim (Minsu) - 김(민수) 교수님
+	To fully unknown people: **선생님** (same as teacher)
+
+	*Middle aged man* - **아저씨**
+	*Middle aged woman* - **아주머니**
+- **to older relatives**:
+	*name* + older sister/brother
+	
+| Older brother (of woman) | 오빠  |
+| ------------------------ | --- |
+| Older brother (of man)   | 형   |
+| Older sister (of woman)  | 언니  |
+| Older sister (of man)    | 누나  |
+
+- **to younger relatives**:
+	*name* + 야/아
+
+준호야 - dziunho*ja*
+지민아 - dzmini*na*
+
+> For unknown people with **close age to ours** we might use **씨**, even though more often people use **남**, which is more formal.
+> **it is very unformal to connect: last name + 씨**: 김 씨
+
+## Negates
+
+> To negate some sentence we use **noun1** + **은/는** **noun2** + **이/가** **아니에요**
+> 박재상**은** 운동선수**가** **아니에요** - Pak Jae-sang is not a player
+> 
