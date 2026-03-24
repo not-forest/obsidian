@@ -25,7 +25,26 @@
 - **MCS** - Mobile Communication System
 - **FRMCS** - Future Railway Mobile Communication System
 - **TPC** - Transmit Power Control (***gNB** controls how much transmit power **UE** must use when sending: **PUSCH, PUCCH, SRS, PRACH**)
+
 - **RNTI** - Radio Network Temporary Identifier (*identifier that **gNB** uses to address **UE** on physical channel.*)
+- **SI-RNTI** - System Information Radio-Network Temporary Identifier (*Used fir system information messages **SIB**s on **PDCCH/PDSCH***)
+- **RA-RNTI** - Random Access Radio-Network Temporary Identifier (*Msg2/Msg3 scheduling*)
+- **TC-RNTI** - Temporary Identifier Radio-Network Temporary Identifier (*Temporary assigned during **RA**; later turns into **C-RNTI***)
+- **C-RNTI** - Cell Radio-Network Temporary Identifier (*Main UE identifier in RCC_CONNECTED state. Used for all UE-specific DL/UL scheduling*)
+- **SP-C-RNTI** - SPS Radio-Network Temporary Identifier (*Used for Semi-Persistence Scheduling activation/deactivation*)
+- **CS-RNTI** - Configured Scheduling Radio-Network Temporary Identifier (*MAC-controlled periodic UL*)
+- **P-RNTI** - Paging Radio-Network Temporary Identifier (*Used for Paging messages*)
+- **MCS-C-RNTI** - MCS Cell Radio-Network Temporary Identifier (*Used for MCS based control - rarely used in special scheduling*)
+- **TPC-RNTI** - Transmit Power Control Radio-Network Temporary Identifier (*Used for Transmit Power Control commands on **PUSCH/PUCCH***)
+- **SFI-RNTI** - Slot Format Indication Radio-Network Temporary Identifier (*Defines for SFI in dynamic TDD slot control*)
+- **INT-RNTI** - Interference Radio-Network Temporary Identifier (*Interference related signaling used for UL interference coordination*)
+- **SC-RNTI** - Secondary Cell Radio-Network Temporary Identifier (*Used for **SCell** activation/deactivation*)
+- **UCI-RNTI** - Uplink Control Information Radio-Network Temporary Identifier (*Used to schedule **UCI***)
+- **B-RNTI** - Beam Radio-Network Temporary Identifier (*Used for beam failure recovery messages*)
+- **FR-RNTI** - Fallback Random Access Radio-Network Temporary Identifier (*Used for Fallback Random Access in rare special cases*)
+- **GC-RNTI** - Group Cell Radio-Network Temporary Identifier (*Group **RNTI** used for multicast/groupcast transmissions*)
+- **STC-RNTI** - Synchronization Time Control Radio-Network Temporary Identifier (*Used for time adjustments*)
+
 - **TA** - Timing Advance (*command sent by **gNB** to "delay" the **UE** so that it's **UL** transmission is aligned with **gNB***)
 - **NF** - Network Function
 - **CORESET** - Control Resource Sets (***OFDM** resources where **PDCCH** is transmitted*)
@@ -48,7 +67,6 @@
 - **BLER** - Block Error Rate
 - **DTX** - Discontinuous Transmission (*Mechanism where transmitter stops transmitting some OFDM symbols intentionally to save power, reduce interference, etc.*)
 - **DRX** - Discontinuous Reception (*Mechanism where receiver stops receiving some OFDM symbols intentionally to save power, reduce interference, etc.*)
-- **C-RNTI** - Cell Radio-Network Temporary Identifier
 - **SUL** - Supplementary Uplink (*Additional associated **UL** channel, which works differently than carrier aggregation. Usually located on lower frequency bands, allowing for better data rates on "bad conditions". For example at the edge of the cell, where higher frequencies lead to huge data losses*)
 - **SUD** - Supplementary Downlink (*Not defined specifically, but can be created by carrier-aggregation, since the specification allows more **DL** carriers than **UL**, some of them can be used as a **SUD** carriers. Common usage is: combination of **paired** and **unpaired** spectra aggregation, to increase capacity and data rates*)
 - **SFI** - Slot Format Indicator (*Mechanism that signals current uplink-downlink allocation to a group of devices monitoring **DCI**. It says about the type of slot-format*)
