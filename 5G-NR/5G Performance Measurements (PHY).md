@@ -30,7 +30,7 @@ This note specifies performance measurements for 5G networks based on the above 
 > - **PLMN ID** - if **gNB** serves multiple operators;
 > - **S-NSSAI** - in **5G** network slicing (one per **eMBB, URLLC, mMTC**);
 > - **QoS** - **Non-GBR, GBR, Delay-critical GBR**;
-> ![[Pasted image 20260313153305.png]]
+> ![[Pasted image 20260313153305 1.png]]
 > It is a single integer value from **0 to 100**. The measurement name has the form **RRU.PrbDl**, which indicates the **DL PRB** Usage for all traffic, or optionally **RRU.PrbDl.PLMN**, where the **PLMN** identifies the **PLMN ID**, or optionally **RRU.PrbDl.SNSSAI**, where the **SNSSAI** identifies the **S-NSSAI**, or optionally **RRU.PrbDl.SNSSAI.ResType**, where the **ResType** identifies the resource type of 5G QoS characteristics, or optionally **RRU.PrbDl_UEType**, where the UE type refers to allowed values of **uECellBarredAccess** of TS 28.541 clause 4.4.1.
 > 
 > **Valid for packet switched traffic**. Used to monitor the load of the radio physical layer.

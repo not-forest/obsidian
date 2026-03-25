@@ -100,6 +100,7 @@
 
 #### Blocks
 - **[[MIB]]** - Master Information Block (**Contains system bandwidth info, subcarrier spacing, system frame number, control resource configuration.**)
+- **RMSI** - Remaining Minimum System Information (*Rest of information needed for UE after it gets basic access to cell via **MIB/SIB***)
 - **SIB** - System Information Block
 - **CRB** - Common Resource Block (*Provides common frequency reference for all channels and signals in the system.)
 - **TB** - Transport Block

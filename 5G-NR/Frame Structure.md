@@ -1,3 +1,12 @@
+
+> **Numerology** - numerology is defined by **sub-carrier spacing (SCS)** and **CP** overhead. In LTE there is only one **SCS** of 15kHz, while **5G-NR** defines multiple of them.
+> Any numerology **can be used independently of the frequency band**, although it is assumed not to use **low SCS** at **high carrier frequencies**
+> Numerology is based on exponentially scalable sub-carrier spacing $\delta F = 2^\mu \times 15kHz$, with $\mu$ = {0, 1, 2, 4} for **PSS, SSS and PBCH** and {0, 1, 2, 3} for **other** channels.
+> Normal **CP** is supported for all **SCS**, while the **Extended CP** is only supported for $\mu=2$
+
+> **Physical Resource Block (PRB)** - 12 consecutive sub-carriers form a **PRB**, with up to **275 PRBs** supported on a carrier.
+> **Resource Element (RE)** - defined as **one subcarrier** and one **OFDM symbol**
+
 ## 5G-NR Frame Features
 - **10 ms** frames;
 - **10 subframe** per frame (1 ms.);
@@ -19,6 +28,7 @@
 | 60                       | 14           | 40          | 4              |
 | 120                      | 14           | 80          | 8              |
 | 240                      | 14           | 160         | 16             |
+![[Pasted image 20260325141336.png]]
 
 | Subcarrier Spacing [kHz] | Frequency        |                        |
 | ------------------------ | ---------------- | ---------------------- |
@@ -27,6 +37,15 @@
 | 60                       | **FR1**, **FR2** |                        |
 | 120                      | **FR2**          |                        |
 | 240                      | N/A              | **SSB** only. No data. |
+
+## Numerology in Details Simulation
+
+![[Pasted image 20260325141429.png]]
+![[Pasted image 20260325141440.png]]
+![[Pasted image 20260325141447.png]]
+![[Pasted image 20260325141500.png]]
+![[Pasted image 20260325141506.png]]
+![[Pasted image 20260325141511.png]]
 
 ## Symbol Alignment
 

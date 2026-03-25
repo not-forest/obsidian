@@ -53,6 +53,7 @@ Standard defines two **FR (Frequency Ranges):
 ## Contents
 #### Overall
 - [[Curated List of Abbreviations (5G)]]
+- [[5G Random Access Procedure]]
 - [[Network Structure]]
 - [[OFDM]]
 #### PHY
@@ -71,6 +72,7 @@ Standard defines two **FR (Frequency Ranges):
 - [[UCI]]
 - [[DMRS]]
 - [[SSB]]
+- [[RNTI]]
 - [[5G Performance Measurements (PHY)]]
 
 ## Knowledge Base
