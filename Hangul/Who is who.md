@@ -98,4 +98,17 @@ The way we speak to different people shall differ based on formality:
 
 > To negate some sentence we use **noun1** + **은/는** **noun2** + **이/가** **아니에요**
 > 박재상**은** 운동선수**가** **아니에요** - Pak Jae-sang is not a player
-> 
+
+| Who is he/she?           | 누구예요?        |
+| ------------------------ | ------------ |
+| What is your name?       | 이름이 뭐몌요?     |
+| Where do you come from?  | 어느 나라 사람이에요? |
+| What is your profession? | 직업이 뭐예요?     |
+| Is it a man/woman?       | 여자여요?/남자예요   |
+| Thank you                | 감사합니다        |
+| name                     | 이름           |
+| gender                   | 성별           |
+| nationality              | 국적           |
+| profession               | 직업           |
+| woman                    | 여자           |
+
