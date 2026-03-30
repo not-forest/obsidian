@@ -26,6 +26,7 @@
 - **FRMCS** - Future Railway Mobile Communication System
 - **TPC** - Transmit Power Control (***gNB** controls how much transmit power **UE** must use when sending: **PUSCH, PUCCH, SRS, PRACH**)
 - **RAR** - Random Access Response (*Sent with **RA-RNTI***)
+- **BA** - Bandwidth Adaptation (*Mechanism of configuring **BWP** for each **UE** to support multiple numerologies across carrier bandwidth.*)
 
 - **RNTI** - Radio Network Temporary Identifier (*identifier that **gNB** uses to address **UE** on physical channel.*)
 - **SI-RNTI** - System Information Radio-Network Temporary Identifier (*Used fir system information messages **SIB**s on **PDCCH/PDSCH***)
