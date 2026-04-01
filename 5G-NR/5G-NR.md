@@ -56,6 +56,7 @@ Standard defines two **FR (Frequency Ranges):
 - [[5G Random Access Procedure]]
 - [[Network Structure]]
 - [[OFDM]]
+- [[RRC States]]
 #### PHY
 - [[Frame Structure]]
 - [[Propagation Model]]
@@ -67,6 +68,8 @@ Standard defines two **FR (Frequency Ranges):
 - [[PUSCH]]
 - [[PUCCH]]
 - [[PBCH]]
+- [[PSS]]
+- [[SSS]]
 - [[MIMO]]
 - [[DCI]]
 - [[UCI]]

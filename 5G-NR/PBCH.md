@@ -1,5 +1,6 @@
 > **Physical Broadcast Channel** - sent to all **UE** in a cell and contains information about **MIB**. Transmitted inside the **SSB** alongside with synchronization signals and **DRMS** for **PBCH**. This information alltogether allows **UE** to access the cell properly. The only channel that can work with **SCS** of 240 kHz.
 
+**UE** needs to first decode **PBCH/MIB** in order for it to receive other system information transmitted on **PDSCH**.
 ## Processing Chain
 
 > **Payload Generation** - generates a payload from **MIB**. It includes: part of **system frame number**, **SCS** information, **SSB** configuration and some other configuration bits related to cell.

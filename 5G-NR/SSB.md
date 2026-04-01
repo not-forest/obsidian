@@ -4,6 +4,11 @@
 > **Secondary Synchronization Signal (SSS)** - provides **cell ID** (one of 1008) and has **one of 336** possible sequences.
 > **Physical Broadcast Channel (PBCH)** - contains the **MIB** and includes basic information to take next step - to decode **SIB1**.
 
+Below is a time-frequency structure of **SSB**. The **m-sequence** is of length *127* and is mapped on to *127* subcarriers:
+
+![[Pasted image 20260401105302.png]]
+
+
 ## **SSB** Numerology
 
 **SSB** can apper in one sub-frame more times depending on **SCS**, and it's **burst** can also be adjusted, with **SSB Burst Periodicity** of: 5, 10, 20, 40*, 80* or 160* ms.
