@@ -1,6 +1,23 @@
 > **Physical Broadcast Channel** - sent to all **UE** in a cell and contains information about **MIB**. Transmitted inside the **SSB** alongside with synchronization signals and **DRMS** for **PBCH**. This information alltogether allows **UE** to access the cell properly. The only channel that can work with **SCS** of 240 kHz.
 
 **UE** needs to first decode **PBCH/MIB** in order for it to receive other system information transmitted on **PDSCH**.
+
+## Time-frequency Structure
+
+- **UE** knows the timing of **PBCH** after detecting **PSS**;
+- **PBCH/MIB** is transmitted periodically at **SSB** periodicity;
+- **PBCH** occupies two full **OFDM** symbols, spanning 240 subcarriers in (2, 4) symbol, and also below and above **SSS** spanning 48 subcarriers in the 3rd symbol, occupying a total of *576* subcarriers across *3* OFDM symbols (576 **RE**).
+
+![[Pasted image 20260407102030.png]]
+
+- **PBCH DMRS** occupies *144 RE*s, and the payload occupies *432 RE*s;
+- **L1 PHY** after receiving **BCH** data payload (24-bits), appends additional timing related bits to generate **32-bit PBCH payload**;
+- **24-bit CRC** is appended to **PBCH** which yields **56-bits in total**;
+- these **56-bits** result in **512-bits** after channel coding (polar coding) and **864-bits** after rate matching. With **QSPK, just **432 RE**s are needed to transmit it;
+
+- **polar coding** and **QPSK** modulation is used;
+- **single antenna transmission scheme is used**;
+- **PBCH, SSS and PSS uses the same antenna port (if within the same SSB)**
 ## Processing Chain
 
 > **Payload Generation** - generates a payload from **MIB**. It includes: part of **system frame number**, **SCS** information, **SSB** configuration and some other configuration bits related to cell.

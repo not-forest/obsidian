@@ -63,6 +63,7 @@ Standard defines two **FR (Frequency Ranges):
 - [[Power Control]]
 - [[Beam Forming and Management]]
 - [[Channel Sounding & Estimation]]
+- [[System Information]]
 - [[PDCCH]]
 - [[PDSCH]]
 - [[PUSCH]]
