@@ -111,4 +111,32 @@ The way we speak to different people shall differ based on formality:
 | nationality              | 국적           |
 | profession               | 직업           |
 | woman                    | 여자           |
+| country                  | 나라           |
+| language                 | 언어           |
+| family                   | 가족           |
+### Exercise 3
 
+| 나라  | 언어   | 직업   | 가족   |
+| --- | ---- | ---- | ---- |
+| 스페인 | 일보어  | 의사   | 엄마   |
+| 태국  | 중국어  | 선생님  | 아빠   |
+| 여국  | 폴란드어 | 온동선수 | 동갱   |
+| 미국  | 독일어  | 베우   | 할아버지 |
+| 호주  |      |      |      |
+### Exercise 4
+
+1. 저는 가수가 아니에요
+2. 우리 수지 누나는 의사예요
+3. 제 진민 씨는 친구예요
+4. 박쟤상 씨는 한국인
+5. 왕지니 씨는 중국인이에요
+6. 아가타 씨 만나서 반가워요
+
+### Exercise 5
+
+제 이름은 세르기 - My name is Serhii
+저는 폴란드 사람이예요 - I am a Pole
+누구예요? - Who is he?
+민수 씨는 의사여요 - Minsu is a doctor.
+미나 누나는 배우예요 - Mina is an actress.
+후남 씨 일본이 아니예요 - Mr. Hunam is not Japanese.
